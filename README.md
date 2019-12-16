@@ -2,7 +2,7 @@
 
 ### Usecase
 
-There are scenarios DevOps team want to executes simple bash scripts across multiple machines with specific environment variables. This tool is for simple usecase only. We highly recommended [Ansible](https://www.ansible.com/) or another tool [terraform](https://www.terraform.io/) for machine states management and complex orchestrate operations.
+There are scenarios DevOps team want to executes simple bash scripts across multiple machines with specific environment variables. This tool is for simple usecase only. We highly recommended [Ansible](https://www.ansible.com/) or [Terraform](https://www.terraform.io/) for machine states management and complex orchestrate operations.
 
 ### Prerequisite
 
