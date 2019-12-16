@@ -6,7 +6,7 @@ There are scenarios DevOps team want to executes simple bash scripts across mult
 
 ### Prerequisite
 
-Requirement NodeJS version: v12
+Minimum nodejs version requirement: >= v12
 
 Install all dependencies
 ```javascripts
