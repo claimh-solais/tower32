@@ -1,29 +1,29 @@
-# tower 32
+# tower32
 
-## Project setup
-```
+### Usecase
+
+There are scenarios DevOps team want to executes simple bash scripts across multiple machines with specific environment variables. This tool is for simple usecase only. We highly recommended [Ansible](https://www.ansible.com/) or [Terraform](https://www.terraform.io/) for machine states management and complex orchestrate operations.
+
+### Prerequisite
+
+Requirement NodeJS version: v12
+
+Install all dependencies
+```javascripts
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Navigate to browser on port 3000: http://127.0.0.1:3000
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Commands
 
-### Run your tests
-```
-npm run test
-```
+npm run
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+| Command               | Description   |
+| ----------------------|:-------------:|
+| backend:start         | right-aligned |
+| backend:start:dev     | centered      |
+| backend:build         | are neat      |
+| frontend:start        | are neat      |
+| frontend:start:dev    | are neat      |
+| frontend:build        | are neat      |
