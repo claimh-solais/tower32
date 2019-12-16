@@ -1,0 +1,18 @@
+{% asyncEach rootCat in categories %}
+    {% if rootCat.nodeLevel == 0 and rootCat.nodeDepth > 0 %}
+    <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" href="/category/{{ rootCat.id }}">{{ rootCat.title }}</a>
+    
+        <div class="navbar-dropdown">
+            {% asyncEach lvl1Cat in categories %}
+                {% if lvl1Cat.nodeLevel == 1 and lvl1Cat.nodeDepth == 0 %}
+                <a class="navbar-item" href="/category/{{ lvl1Cat.id }}">{{ lvl1Cat.title }}</a>
+                {% endif %}
+            {% endeach %}
+        </div>
+    </div>
+    {% elif rootCat.nodeLevel == 0 and rootCat.nodeDepth == 0 %}
+    <a class="navbar-item" href="/category/{{ rootCat.id }}">{{ rootCat.title }}</a>
+    {% else %}
+    {% endif %}
+{% endeach %}

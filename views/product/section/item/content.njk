@@ -1,0 +1,63 @@
+<section class="section">
+    <div class="container is-widescreen">
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <div class="box">
+                    <figure class="image">
+                        <img src="{{ product.imageSrc }}" alt="">
+                    </figure>
+                </div>
+
+                <div class="box">
+                    <p class="content">Giao hàng miễn phí nội thành Hà Nội và Sài Gòn. Các tỉnh khác vui lòng liên hệ để
+                        được báo giá ship hàng.</p>
+                    <p class="content">Đối với nhưng chai rượu thuộc hàng cao cấp Icon wine vui lòng gọi để biết chi
+                        tiết
+                        năm sản xuất và giá bán.</p>
+                    <p class="content">Khách hàng mua trên 01 thùng sẽ được hưởng chiết khấu cao. Vui lòng gọi điện để
+                        biết
+                        thêm chi tiết.</p>
+                    <p class="content">Tổ chức, cá nhân, siêu thị, nhà hàng và shop mua số lượng lớn vui lòng gọi để có
+                        giá
+                        sỉ tốt nhất.</p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box">
+                    <h4 class="title is-4">Thông tin chi tiết</h4>
+                    <div class="is-divider"></div>
+                    <div class="content is-medium">
+                        <h5>{{ product.title }}</h5>
+                        <div class="is-divider"></div>
+                        {{ product.bodyHtml | safe }}
+                    </div>
+                    <div class="is-divider"></div>
+                    <div class="content">
+                        SKU: {{ product.sku }}
+                    </div>
+                    <div class="is-divider"></div>
+                    <div class="content">
+                        <p class="buttons">
+                            <a class="button">
+                                <span class="icon is-small">
+                                    <i class="fas fa-bold"></i>
+                                </span>
+                            </a>
+                            <a class="button">
+                                <span class="icon is-small">
+                                    <i class="fas fa-italic"></i>
+                                </span>
+                            </a>
+                            <a class="button">
+                                <span class="icon is-small">
+                                    <i class="fas fa-underline"></i>
+                                </span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+<nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="https://ruoutot.net/wp-content/uploads/2016/05/logo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+            data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            {% include "base/topnav/category/view.njk" %}
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Quà Tặng – Phụ Kiện</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">Quà Tết Rượu Vang &amp; Bia</a>
+                    <a class="navbar-item">Ly uống rượu vang</a>
+                    <a class="navbar-item">Decanter – Bình thở rượu vang</a>
+                    <a class="navbar-item">Đồ Khui Rượu Vang</a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">XU HƯỚNG</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">Rượu Vang Organic</a>
+                    <a class="navbar-item">Rượu Vang Ngọt</a>
+                    <a class="navbar-item">Rượu vang hồng Rose</a>
+                </div>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">TIN TỨC</a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">Đánh Giá Rượu</a>
+                    <a class="navbar-item">Tin Tức Phụ Kiện Rượu Bia</a>
+                    <a class="navbar-item">Tin Tức Tư Vấn</a>
+                </div>
+            </div>
+
+            <a class="navbar-item">LIÊN HỆ</a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div id="categorySearch"></div>
+            </div>
+        </div>
+    </div>
+</nav>

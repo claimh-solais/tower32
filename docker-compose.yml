@@ -1,0 +1,46 @@
+version: '3.5'
+
+services:
+  app:
+    image: test:5000/tower32:latest
+    container_name: tower32_app
+    ports:
+    - 3000:3000
+    networks:
+    - backend
+    # - mariadb_backend
+    # - redis_backend
+    environment:
+    - NODE_ENV=production
+    # volumes:
+    # - data:/export/data/
+    command:
+    - node /export/main.js
+    deploy:
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 180s
+
+networks:
+  backend:
+    driver: overlay
+    attachable: true
+  # mariadb_backend:
+  #   external: true
+  # redis_backend:
+  #   external: true
+
+# volumes:
+  # tmp:
+  #   external: true
+  # data:
+  #   driver: local
+  #   driver_opts:
+  #     type: none
+  #     o: bind
+  #     device: "/home/data/"

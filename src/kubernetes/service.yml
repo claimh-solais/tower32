@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    service.name: tower32
+  name: tower32
+spec:
+  type: NodePort
+  ports:
+  - name: "http"
+    port: 3001
+    targetPort: 3001
+  selector:
+    service.name: tower32
