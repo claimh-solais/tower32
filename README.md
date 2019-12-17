@@ -19,11 +19,16 @@ Navigate to browser on port 3000: http://127.0.0.1:3000
 
 npm run
 
-| Command               | Description   |
-| ----------------------|:-------------:|
-| backend:start         | right-aligned |
-| backend:start:dev     | centered      |
-| backend:build         | are neat      |
-| frontend:start        | are neat      |
-| frontend:start:dev    | are neat      |
-| frontend:build        | are neat      |
+| Command               | Description                             |
+| ----------------------|:---------------------------------------:|
+| start                 | server start in production mode         |
+| start:dev             | server start in debug mode              |
+| build                 | build server all files                  |
+| frontend:start        | start dev server                        |
+| frontend:build        | build frontend files                    |
+| frontend:inspect      | view webpack.config.js file             |
+| backend:build         | build api server files                  |
+| backend:start         | start api server                        |
+| backend:start:dev     | start api dev server                    |
+| backend:start:debug   | start api dev server with autoreload    |
+| backend:start:prod    | start api production server             |
