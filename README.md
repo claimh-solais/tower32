@@ -20,7 +20,7 @@ Navigate to browser on port 3000: http://127.0.0.1:3000
 npm run
 
 | Command               | Description                             |
-| ----------------------|:---------------------------------------:|
+|:----------------------|:----------------------------------------|
 | start                 | server start in production mode         |
 | start:dev             | server start in debug mode              |
 | build                 | build server all files                  |
