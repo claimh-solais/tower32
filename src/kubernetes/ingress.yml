@@ -58,7 +58,7 @@ spec:
       - path: /
         backend:
           serviceName: tower32
-          servicePort: 3001
+          servicePort: 30001
 
   - host: cdn.test.com
     http:
@@ -66,4 +66,4 @@ spec:
       - path: /
         backend:
           serviceName: tower32
-          servicePort: 3001
+          servicePort: 30001

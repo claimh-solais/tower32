@@ -1,6 +1,8 @@
 import axios from 'axios'
 import qs from 'qs'
 
+axios.defaults.baseURL = 'https://192.168.56.200:30000/'
+
 export default {
     async getItems({ filters, currentPage }) {
         const {

@@ -27,6 +27,6 @@ async function bootstrap() {
     templates: join(rootDir, 'views'),
   });
 
-  await app.listen(3000, '0.0.0.0');
+  await app.listen(30000, '0.0.0.0');
 }
 bootstrap();

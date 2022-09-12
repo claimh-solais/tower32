@@ -13,7 +13,7 @@ Install all dependencies
 npm install
 ```
 
-Navigate to browser on port 3000: http://127.0.0.1:3000
+Navigate to browser on port 30000: http://127.0.0.1:30000
 
 ### Commands
 

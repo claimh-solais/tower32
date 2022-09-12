@@ -5,7 +5,7 @@ services:
     image: test:5000/tower32:latest
     container_name: tower32_app
     ports:
-    - 3000:3000
+    - 30000:30000
     networks:
     - backend
     # - mariadb_backend

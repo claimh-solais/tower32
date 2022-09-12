@@ -8,7 +8,7 @@ import './directives/index'
 
 import vuetify from '@/plugins/vuetify'
 
-window.addEventListener("load", function () {
+const _initApp = function () {
   Vue.config.productionTip = false
 
   Object.defineProperty(Vue.prototype, '_', { value: _ })
@@ -21,4 +21,5 @@ window.addEventListener("load", function () {
       render: h => h(App)
     }).$mount('#app')
   }
-})
+}
+document.readyState !== 'complete' ? window.addEventListener("load", _initApp.bind(this)) : _initApp()

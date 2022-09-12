@@ -1,19 +1,24 @@
-// const ManifestPlugin = require('webpack-manifest-plugin');
-// const InlineChunkManifestHtmlWebpackPlugin = require('inline-chunk-manifest-html-webpack-plugin');
 const { join } = require("path")
 
 module.exports = {
-  "publicPath": "/asset/",
+  "publicPath": "https://192.168.56.200:30001/asset/",
   "outputDir": "dist/public/",
   "devServer": {
     "host": "0.0.0.0",
-    "port": 3001,
-    "compress": true,
+    "port": 30001,
+    "compress": false,
     "disableHostCheck": true,
     "noInfo": true,
     "open": false,
     "hot": true,
-    "inline": true
+    "inline": true,
+    "liveReload": true,
+    "https": true,
+    "headers": {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+    },
   },
   "configureWebpack": {
     "resolve": {
@@ -33,11 +38,14 @@ module.exports = {
               if (clients[index].match(/localhost/)) {
                 clients[index] = clients[index].replace('localhost', '0.0.0.0')
               }
+              if (clients[index].match(/10.0.2.15:30001\/sockjs-node/)) {
+                clients[index] = clients[index].replace(/10.0.2.15:30001\/sockjs-node/, '192.168.56.200:30001/sockjs-node')
+              }
             }
           })
         }
       }
-    ]
+    ],
   },
   "transpileDependencies": [
     "vuetify"
