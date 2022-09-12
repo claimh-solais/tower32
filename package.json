@@ -40,7 +40,7 @@
     "fastify-static": "2.7.0",
     "http-proxy-middleware": "0.20.0",
     "inline-chunk-manifest-html-webpack-plugin": "2.0.0",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "mysql": "2.17.1",
     "nunjucks": "3.2.0",
     "point-of-view": "4.16.0",
