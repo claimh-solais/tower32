@@ -57,7 +57,7 @@
     "vue": "2.7.10",
     "vue-router": "3.6.5",
     "vue-slider-component": "3.0.41",
-    "vuetify": "2.1.14",
+    "vuetify": "2.6.10",
     "vuex": "3.6.2",
     "webpack": "4.46.0",
     "webpack-manifest-plugin": "2.2.0"
